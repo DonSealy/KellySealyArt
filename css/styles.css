@@ -1,0 +1,165 @@
+body {
+	padding-top: 50px;
+	background-color: #5a5a5a;
+}
+.navbar {
+  background: #1b435e
+}
+
+.navbar a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar p {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+	background-image: url(../img/Studio-Background.jpg);
+	height: 760px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+    top:100px;
+}
+
+.jumbotron .text-plate {
+	width: 550px;
+	padding: 20px;
+	margin-bottom: 30px;
+	background-color: rgba(90,90,90,0.8); /*#5a5a5a;*/
+	/*opacity:0.7;*/
+	border: 3px solid;
+	border-radius: 25px;
+}
+
+.jumbotron h1 {
+	color: #1b435e;
+	font-size: 48px;  
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #1b435e;
+}
+
+/* button class CSS is courtesy of http://css-tricks.com/examples/ButtonMaker/# */
+.jumbotron .button {
+   width: 100px;
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+}
+.jumbotron .button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+}
+.jumbotron .button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}
+
+.Work {
+	padding-top: 50px;
+	background: #5a5a5a;
+}
+
+.Work .thumbnail {
+  background-color: #1b435e;
+}
+
+.Work img {
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.Work h2 {
+	color: #1b435e;
+}
+
+.Work h3 {
+	text-align: center;
+	color: #1b435e;
+}
+
+.Work p {
+  color: #1b435e;
+}
+
+.About {
+	height: 200px;
+	background: #1b435e
+}
+
+.About h4 {
+  margin-top: 40px;
+  color: #5a5a5a;
+}
+
+.About p {
+  font-size: 20px;
+  color: #5a5a5a;
+}
+   
+.Contact img {
+	max-width:50px;
+	max-height:50px;
+}
+
+.Contact .container {
+	padding-top: 10px;
+	width: 80px;
+	height: 55px;
+}
+
+footer {
+	background: #5a5a5a;
+}
+
+footer .container {
+	text-align: center;
+	background: #5a5a5a;
+}
+
+footer p {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 11px;
+	color: #1b435e;
+}

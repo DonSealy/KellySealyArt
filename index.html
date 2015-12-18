@@ -1,130 +1,195 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Kelly Sealy's Portfolio</title>
-  
-  <meta name="description" content="A portfolio for the artist Kelly Sealy. Kelly lives and works in the Portland, Oregon area.">
-  <meta name="author" content="Kelly Sealy">
-  
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  
-  <!-- Frameworks -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <!--<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>-->
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+	<meta charset="utf-8">
+	<title>Kelly Sealy's Portfolio</title>
+
+	<meta name="description" content="A portfolio for the artist Kelly Sealy. Kelly lives and works in the Portland, Oregon area.">
+	<meta name="author" content="Kelly Sealy">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+	<!-- Frameworks -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
-<body> 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img alt="Brand" src="img/kslogo.png"></a>
-		</div>
-		
-		<div class="collapse navbar-collapse" id="navbar-collapse-1">
-		  <ul class="nav navbar-nav navbar-left">
-				<li><a href="#">Home</a></li>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="mailto:emeldir@gmail.com">Contact</a></li>
-		  </ul>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt="Brand" src="img/kslogo.png"></a>
+			</div>
 
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Cart</a></li>
-				<li><a href="#">Log In</a></li>
-			</ul>
-		</div>
-	</div>
-  </div>
-  
-<div class="jumbotron">
-	<div class="container">
-		<div class="text-plate">
-			<h1>Kelly Sealy's Art Portfolio</h1>
-			<p>A collection of painting and drawings created in Portland, Oregon.</p>
-		</div>
-		<div id="workButton" class="button">View Work</div>
-	</div>
-</div>
-  
-<div id="work" class="Work">
-	<div class="container">
-		<h2>Kelly's Work</h2>
-		<p>Here is a showcase of Kelly's work.</p>
-		<div class="row">
-			<!-- First Column -->
-			<div class='col-md-4'>
-				<h3>Charcoal</h3>
-				<div class="thumbnail">
-					<img src="img/image1.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image2.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image3.jpg">
-				</div>
-			</div>
-			<!-- Second Column -->
-			<div class='col-md-4'>
-				<h3>Pastel</h3>
-				<div class="thumbnail">
-					<img src="img/image4.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image5.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image6.jpg">
-				</div>
-			</div>
-			<!-- Third Column -->
-			<div class='col-md-4'>
-				<h3>Other</h3>
-				<div class="thumbnail">
-					<img src="img/image7.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image8.jpg">
-				</div>
-				<div class="thumbnail">
-					<img src="img/image9.jpg">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-  
-<div id="about" class="About">
-	<div class="container">
-		<h4>About Kelly:</h4>
-		<p>Here is a blurb about Kelly.<br>Likely more than one line.<br>Three is good for now.</p>
-	</div>
-</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="#">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="mailto:emeldir@gmail.com">Contact</a></li>
+				</ul>
 
-<footer>
-  <div class="Contact">
-	<div class="container">
-		<a href="mailto:emeldir@gmail.com"><img src="img/email-icon.png"></a>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">Log In</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
+
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i> Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div>
-		<p>Contents Copyright 2015 Kelly Sealy
-		<br>Website by Don Sealy</p>
+	<!-- End Bootstrap Image Gallery lightbox -->
+
+	<div class="jumbotron">
+		<div class="container">
+			<div class="text-plate">
+				<h1>Kelly Sealy's Art Portfolio</h1>
+				<p>A collection of painting and drawings created in Portland, Oregon.</p>
+			</div>
+			<div id="workButton" class="button">View Work</div>
+		</div>
 	</div>
-  </footer>
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
+
+	<div id="work" class="Work">
+		<div class="container">
+			<h2>Kelly's Work</h2>
+			<p>Here is a showcase of Kelly's work.</p>
+
+			<div class="row">
+				<!-- First Column -->
+				<div class='col-md-4' id="links">
+					<h3>Charcoal</h3>
+					<a href="img/image1.jpg" title="image1" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image1.jpg" alt="image1">
+						</div>
+					</a>
+					<a href="img/image2.jpg" title="image2" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image2.jpg" alt="image2">
+						</div>
+					</a>
+					<a href="img/image3.jpg" title="image3" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image3.jpg" alt="image3">
+						</div>
+					</a>
+				</div>
+
+				<!-- Second Column -->
+				<div class='col-md-4' id="links">
+					<h3>Pastel</h3>
+					<a href="img/image4.jpg" title="image4" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image4.jpg" alt="image4">
+						</div>
+					</a>
+					<a href="img/image5.jpg" title="image5" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image5.jpg" alt="image5">
+						</div>
+					</a>
+					<a href="img/image6.jpg" title="image6" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image6.jpg" alt="image6">
+						</div>
+					</a>
+				</div>
+
+				<!-- Third Column -->
+				<div class='col-md-4' id="links">
+					<h3>Other</h3>
+					<a href="img/image7.jpg" title="image7" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image7.jpg" alt="image7">
+						</div>
+					</a>
+					<a href="img/image8.jpg" title="image8" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image8.jpg" alt="image8">
+						</div>
+					</a>
+					<a href="img/image9.jpg" title="image9" data-gallery>
+						<div class="thumbnail">
+							<img src="img/image9.jpg" alt="image9">
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="about" class="About">
+		<div class="container">
+			<h4>About Kelly:</h4>
+			<p>Here is a blurb about Kelly.
+				<br>Likely more than one line.
+				<br>Three is good for now.</p>
+		</div>
+	</div>
+
+	<footer>
+		<div class="Contact">
+			<div class="container">
+				<a href="mailto:emeldir@gmail.com"><img src="img/email-icon.png"></a>
+			</div>
+		</div>
+		<div>
+			<p>Contents Copyright 2015 Kelly Sealy
+				<br>Website by Don Sealy</p>
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
+
 </html>
